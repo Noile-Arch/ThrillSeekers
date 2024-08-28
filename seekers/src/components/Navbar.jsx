@@ -76,7 +76,7 @@ const Navbar=() =>{
                 </div>
               </motion.div>
 
-              <div className="flex justify-center items-end py-4 mt-10 ">
+              <div className="flex justify-center items-end py-4 mt-1 ">
                 <button
                   className="text-[35px] text-[#27fcfc] hover:text-[red]"
                   onClick={() => {
