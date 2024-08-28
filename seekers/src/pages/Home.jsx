@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -8,30 +9,40 @@ const Home = () => {
       <div className="text-[white] w-full absolute z-20 scroll-smooth">
         <section
           className="md:min-h-screen  md:h-full  hero w-[100%] bg-contain scroll-smooth"
-          style={{ backgroundImage: `url('/mountainrainbow.jpg')`,backgroundPosition:'center' ,backgroundSize:'cover'}}
+          style={{
+            backgroundImage: `url('/mountainrainbow.jpg')`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
         >
           <div className="md:h-screen h-[600px]  w-[100%] bg-gradient-to-b from-[#4e4e94] from-10% via-transparent via-40% to-[#110e24] to-95% pt-20 flex justify-center items-center">
             <div className="w-[650px] px-10 md:px-0 flex flex-col lg:justify-start justify-center items-center md:text-left text-center  ">
               <div className="w-full flex md:justify-start items-center gap-3 justify-center  ">
                 <h1 className="md:w-[40px] w-full bg-[gold]  h-[2.5px]"></h1>
-                <h1 className="text-[gold] text-[10px] lg:text-[16px] font-extrabold  ">WELCOME</h1>
+                <h1 className="text-[gold] text-[10px] lg:text-[16px] font-extrabold  ">
+                  WELCOME
+                </h1>
                 <h1 className="md:w-[40px] w-full bg-[gold]  h-[2.5px]"></h1>
               </div>
 
               <h1 className=" my-4 md:text-[60px] lg:text-[60px] font-bold text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#ff3c00] via-[#fce303] to-[#00e1ff] ">
                 Explore New Horizons & Discover The World
               </h1>
-              <h2 className="my-4 w-full text-[white] md:mt-[1px] mt-2">
-                Scroll down
+              <div className="w-full flex justify-center md:justify-start mt-5">
+              <h2 className="my-4 w-8  flex justify-center text-[white] mt-2  border-2 rounded-full  px-1 py-5 ">
+                <p className="text-[12px] md:text-[14px] rotate-90 animate-bounce font-extrabold text-[#27ff27] "><FaArrowDownLong size={20} /></p>
+                
               </h2>
+              </div>
+              
             </div>
           </div>
         </section>
 
-        <section className="bg-[#110e24] md:pt-10 pt-20 md:h-[400px] h-[auto] w-[100%]">
+        <section className="bg-[#110e24] md:pt-10 pt-10 md:h-[400px] h-[auto] w-[100%]">
           <div className="md:flex-row flex flex-col md:flex justify-center md:items-center items-start md:gap-10 gap-1">
             <div className="pattern bg-cover bg-bottom bg-no-repeat md:w-[500px] w-[100%] h-[400px] md:h-[300px]  bg-gradient-to-b from-[#110e24] from-10% to-[#413b3b] to-30% md:flex-row flex flex-col md:flex justify-start items-start md:rounded-full border-[#f6fa04]  md:border-2">
-              <div className="md:w-[500px] w-[100%]  h-[450px] "></div>
+              <div className="md:w-[500px] w-[100%]  h-[250px] "></div>
             </div>
             <div className="md:w-[520px] px-4 py-6">
               <h1 className="text-[20px] font-bold pb-2 md:pb-4">
@@ -178,7 +189,7 @@ const Home = () => {
                 src="/vehicles.jpg"
                 className="md:h-[350px] md:w-[700px] w-[400px] rounded-t-[20px] h-[300px] bg-cover bg-center md:rounded-r-none md:rounded-l-[20px]"
               ></img>
-              <div className="flex flex-col justify-start items-start md:w-[950px] w-[350px] py-4 px-4 md:px-2">
+              <div className="flex flex-col justify-start items-start md:w-[950px] w-[336px] py-4 px-4 md:px-2">
                 <h1 className="font-semibold">Special Private Tour</h1>
                 <div className="my-4"></div>
                 <p className="mt-4 text-[13px] text-slate-500 font-medium">
@@ -208,7 +219,7 @@ const Home = () => {
             </div>
 
             <div className="md:flex-row flex flex-col justify-center items-center my-8 md:gap-[50px] gap-2 text-[14px] shadow-2xl shadow-[#65ff60] rounded-[20px] md:w-[800px]">
-              <div className="flex flex-col justify-start items-start md:w-[700px] w-[350px] py-4 px-4">
+              <div className="flex flex-col justify-start items-start md:w-[700px] w-[336px] py-4 px-4">
                 <h1 className="font-semibold">Customized Group Hiking</h1>
                 <div className="my-4"></div>
                 <p className="mt-4  text-[13px] text-slate-500 font-medium">
@@ -245,7 +256,7 @@ const Home = () => {
                 src="/boat.png"
                 className="md:h-[350px]  md:w-[350px] w-[400px] h-[300px] bg-cover bg-center rounded-t-[20px] md:rounded-l-[20px] md:rounded-r-none"
               ></img>
-              <div className="flex flex-col justify-start items-start md:w-[850px] w-[350px] py-4 px-4 md:px-2">
+              <div className="flex flex-col justify-start items-start md:w-[850px] w-[336px] py-4 px-4 md:px-2">
                 <h1 className="font-semibold">Kayak & Drifting Journey</h1>
                 <div className="my-4"></div>
                 <p className="mt-4 text-[13px] text-slate-500 font-medium">
@@ -276,13 +287,13 @@ const Home = () => {
         </section>
 
         <section>
-          <div className="h-[700px] md:h-[700px] contact">
+          <div className="h-[700px] w-full md:h-[700px] contact">
             <div className="h-full w-[100%] bg-gradient-to-b from-[white] from-5% to-transparent to-40% flex flex-col md:justify-start items-center text-slate-800 text-[13px] ">
-              <div className="w-[400px] flex flex-col border-b border-slate-500 pb-8 md:mt-[0px] mt-[120px]">
+              <div className="w-[300px] flex flex-col border-b border-slate-500 pb-8 md:mt-[0px] mt-[120px]">
                 <h1 className="font-extrabold text-center mb-4">
                   Your Exploration Starts Here
                 </h1>
-                <p className="text-center flex flex-col">
+                <p className="text-center flex flex-col ">
                   Our mission is to connect you with the wonders of our parks,
                   offering tailored experiences for every adventurer.
                 </p>
