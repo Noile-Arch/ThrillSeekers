@@ -11,7 +11,7 @@ const Navbar=() =>{
         <div className="flex md:justify-between items-center md:gap-40 lg:gap-80 gap-[100px] text-[#ffffff]">
           <div href="/">
             <div className="flex flex-col justify-start items-start">
-              <h1 className="text-[25px] font-extrabold">Thrill Seekers</h1>
+              <h1 className="text-[24px] font-extrabold">Thrill Seekers</h1>
               <h2 className="text-[10px] font-bold">
                 explore all creations with us
               </h2>
