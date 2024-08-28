@@ -18,7 +18,7 @@ const Navbar=() =>{
             </div>
           </div>
           <button
-            className="md:hidden flex text-[30px] hover:text-[gold]"
+            className="md:hidden flex justify-center text-[30px] hover:text-[gold]"
             onClick={() => {
               setActive(!active);
             }}
