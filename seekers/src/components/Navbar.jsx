@@ -49,7 +49,7 @@ const Navbar=() =>{
               exit={{ y: "-100vh" }}
             >
               <motion.div
-                className="flex  flex-col justify-start items-center font-bold gap-[45px] p-4 my-10 border-b-2 w-[300px]"
+                className="flex  flex-col justify-start items-center font-bold gap-[30px] p-4 my-10 border-b-2 w-[300px]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -71,12 +71,12 @@ const Navbar=() =>{
                 <div href="/" className="hover:text-[gold] duration-300">
                   Reviews
                 </div>
-                <div href="/" className="hover:text-[gold] duration-300 mb-10">
+                <div href="/" className="hover:text-[gold] duration-300 mb-1">
                   Offers
                 </div>
               </motion.div>
 
-              <div className="flex justify-center items-end py-4 mt-1 ">
+              <div className="flex justify-center items-end py-2 mt-1 ">
                 <button
                   className="text-[35px] text-[#27fcfc] hover:text-[red]"
                   onClick={() => {
