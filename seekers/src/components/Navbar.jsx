@@ -37,7 +37,7 @@ const Navbar=() =>{
         <AnimatePresence onExitComplete={() => setActive(false)}>
           {active && (
             <motion.div
-              className="md:hidden fixed top-0 flex  flex-col justify-center items-center bg-black/90 w-[100%] h-screen text-[#fffffe] text-[20px] font-bold gap-4 p-4 z-40 "
+              className="md:hidden fixed top-0 flex  flex-col justify-start items-center bg-black/90 w-[100%] h-screen text-[#fffffe] text-[20px] font-bold gap-4 p-4 z-40 "
               initial={{ x: 100 }}
               animate={{ x: 0 }}
               transition={{
