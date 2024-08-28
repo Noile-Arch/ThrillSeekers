@@ -37,7 +37,7 @@ const Navbar=() =>{
         <AnimatePresence onExitComplete={() => setActive(false)}>
           {active && (
             <motion.div
-              className="md:hidden fixed top-0 flex  flex-col justify-center items-center bg-black/90 w-[100%] h-screen text-[#fffffe] text-[20px] font-bold gap-10 p-4 z-40 "
+              className="md:hidden fixed top-0 flex  flex-col justify-center items-center bg-black/90 w-[100%] h-screen text-[#fffffe] text-[20px] font-bold gap-4 p-4 z-40 "
               initial={{ x: 100 }}
               animate={{ x: 0 }}
               transition={{
@@ -49,7 +49,7 @@ const Navbar=() =>{
               exit={{ y: "-100vh" }}
             >
               <motion.div
-                className="flex  flex-col justify-start items-center font-bold gap-[50px] p-4 my-10 border-b-2 w-[300px]"
+                className="flex  flex-col justify-start items-center font-bold gap-[45px] p-4 my-10 border-b-2 w-[300px]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -71,7 +71,7 @@ const Navbar=() =>{
                 <div href="/" className="hover:text-[gold] duration-300">
                   Reviews
                 </div>
-                <div href="/" className="hover:text-[gold] duration-300 mb-20">
+                <div href="/" className="hover:text-[gold] duration-300 mb-10">
                   Offers
                 </div>
               </motion.div>
