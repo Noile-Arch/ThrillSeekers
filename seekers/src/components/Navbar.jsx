@@ -49,7 +49,7 @@ const Navbar=() =>{
               exit={{ y: "-100vh" }}
             >
               <motion.div
-                className="flex  flex-col justify-start items-center font-bold gap-[30px] p-4 my-8 border-b-2 w-[300px]"
+                className="flex  flex-col justify-start items-center font-bold gap-[40px] p-4 my-8 border-b-2 w-[300px]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
